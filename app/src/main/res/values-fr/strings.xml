@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">quizDevMobile</string>
+    <string name="large_text">yo comment va ?</string>
+    <string name="action_settings">paramettre</string>
+</resources>
