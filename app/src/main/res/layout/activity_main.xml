@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/before_start_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avant de commencer"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/register_form_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dites nous en plus sur vous"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/blue_om"
+        />
+    
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/firstname"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastname"
+        />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="+33"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date de naissance:"
+        android:padding="5dp"
+        />
+
+    <Button
+        android:id="@+id/datepicker_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01/01/2000"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        style="?android:spinnerStyle"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexe:"
+        android:padding="5dp"
+        />
+
+    <Spinner
+        android:id="@+id/sexe_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        />
+
+    <Button
+        android:id="@+id/validate_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_om"
+        android:text="Valider"
+        />
+
+</LinearLayout>
