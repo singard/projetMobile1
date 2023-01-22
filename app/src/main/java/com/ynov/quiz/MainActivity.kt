@@ -8,12 +8,16 @@ import android.app.DatePickerDialog;
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Spinner
 import java.text.SimpleDateFormat
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var firstnameTF: EditText
+    private lateinit var lastnameTF: EditText
+    private lateinit var phoneTF: EditText
     private lateinit var binding: ActivityMainBinding
     private lateinit var dateButton: Button
     private lateinit var sexeSpinner: Spinner
@@ -28,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         dateButton = findViewById<Button>(R.id.datepicker_birthday)
         sexeSpinner = findViewById<Spinner>(R.id.sexe_spinner)
         validateBtn = findViewById<Button>(R.id.validate_form)
+        firstnameTF = findViewById<EditText>(R.id.firstname)
+        lastnameTF = findViewById<EditText>(R.id.lastname)
+        phoneTF = findViewById<EditText>(R.id.phone_number)
 
         val myCalendar = Calendar.getInstance()
         val datePicker = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
