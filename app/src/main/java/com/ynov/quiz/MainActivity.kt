@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import com.ynov.quiz.databinding.ActivityMainBinding
 import android.app.DatePickerDialog;
-import android.content.Context
 import android.content.Intent
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -75,6 +74,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("lastname", lastnameTF.text.toString())
             intent.putExtra("phone", phoneTF.text.toString())
             intent.putExtra("sexe", sexe.toString())
+
             startActivity(intent)
         }
     }

@@ -9,12 +9,15 @@
         android:id="@+id/before_start_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:text="@string/before_start"
         android:textSize="15sp"
         android:textStyle="normal"
         android:gravity="center"
+        android:text="Avant de commencer"
         android:textColor="@color/black"
-        />
+        android:textSize="15dp"
+        android:textStyle="normal" />
 
     <TextView
         android:id="@+id/register_form_label"

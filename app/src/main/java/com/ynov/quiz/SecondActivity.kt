@@ -26,6 +26,7 @@ class SecondActivity: AppCompatActivity() {
         resultNumberChamp = findViewById<Slider>(R.id.result_number_champ)
 
         val bundle: Bundle? = intent.extras
+
         val firstname = bundle!!.getString("firstname")
 
         quizzFirstname.text = "Bienvenue $firstname"
@@ -56,6 +57,7 @@ class SecondActivity: AppCompatActivity() {
             }
 
             intent.putExtra("goodAnswers", numberOfGoodAnswer.toString())
+
             intent.putExtra("firstname", firstname.toString())
 
             startActivity(intent)
