@@ -26,9 +26,12 @@ class SecondActivity: AppCompatActivity() {
         resultNumberChamp = findViewById<Slider>(R.id.result_number_champ)
 
         val bundle: Bundle? = intent.extras
-        val firstname = bundle!!.getString("firstname")
 
-        quizzFirstname.text = "Bienvenue $firstname"
+        //val firstname = bundle!!.getString("firstname")
+
+        //quizzFirstname.text = "Bienvenue $firstname"
+        quizzFirstname.text = "Bienvenue "
+
         var numberOfWinChamp = resultNumberChamp.value
 
         resultNumberChamp.addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
@@ -56,7 +59,7 @@ class SecondActivity: AppCompatActivity() {
             }
 
             intent.putExtra("goodAnswers", numberOfGoodAnswer.toString())
-            intent.putExtra("firstname", firstname.toString())
+            //intent.putExtra("firstname", firstname.toString())
 
             startActivity(intent)
         }

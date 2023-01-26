@@ -14,7 +14,17 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_main2"
+            android:label="title_activity_main2"
+            android:theme="@style/Theme.QuizDevMobile.NoActionBar" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            android:label="SecondActivity"
+            android:theme="@style/Theme.QuizDevMobile.NoActionBar" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false"
+            android:label="ResultActivity"
             android:theme="@style/Theme.QuizDevMobile.NoActionBar" />
         <activity
             android:name=".HomeActivity"
