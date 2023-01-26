@@ -23,9 +23,9 @@
     <string name="action_settings">paramettre</string>
     <string name="firstname">Prénom</string>
     <string name="lastname">Nom</string>
-    <string name="prompt_email">Email</string>
-    <string name="number_of_champ_wins">Combien de fois l\'OM a t\'il remporté le championnat ?</string>
+    <string name="year_win_ldc">En quelle année l\'OM a remporté la ligue des champions ?</string>
+    <string name="before_start">Avant de commencer</string>
     <string name="tell_us_about_you">Dites nous en plus sur vous</string>
-    <string name="title_activity_main2">MainActivity2</string>
-    <string name="login_failed">Login failed</string>
+    <string name="year">Année</string>
+    <string name="number_of_champ_wins">Combien de fois l\'OM a t\'il remporté le championnat ?</string>
 </resources>
