@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import com.ynov.quiz.databinding.ActivityMainBinding
 import android.app.DatePickerDialog;
+import android.content.Context
 import android.content.Intent
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -46,6 +47,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         val options = arrayOf("Homme", "Femme", "Non binaire")
+
+        var sexe = options[0];
+
         sexeSpinner.adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options)
 
         dateButton.setOnClickListener {
@@ -59,17 +63,18 @@ class MainActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                print("a")
+                sexe = options[position]
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                print("b")
-            }
-
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
 
         validateBtn.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("firstname", firstnameTF.text.toString())
+            intent.putExtra("lastname", lastnameTF.text.toString())
+            intent.putExtra("phone", phoneTF.text.toString())
+            intent.putExtra("sexe", sexe.toString())
             startActivity(intent)
         }
     }
