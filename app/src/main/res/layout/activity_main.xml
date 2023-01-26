@@ -14,10 +14,7 @@
         android:textSize="15sp"
         android:textStyle="normal"
         android:gravity="center"
-        android:text="Avant de commencer"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="normal" />
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/register_form_label"
