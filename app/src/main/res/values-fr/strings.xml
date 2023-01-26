@@ -3,7 +3,6 @@
     <string name="app_name">quiz</string>
     <string name="large_text">yo comment va ?</string>
     <string name="action_settings">paramettre</string>
-<<<<<<< HEAD
     <string name="invalid_username">se n\'est pas un nom valide</string>
     <string name="invalid_password">"le mot de passe "</string>
     <string name="first_fragment_label">premier fragment</string>
@@ -13,4 +12,5 @@
     <string name="hello_first_fragment">salut premier fragment</string>
     <string name="hello_second_fragment">salut second fragment</string>
     <string name="homeButton">bienvenue cliquer pour commencer</string>
+    <string name="toast_message">salut c\'est partie</string>
 </resources>

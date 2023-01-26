@@ -17,6 +17,7 @@ class HomeActivity : AppCompatActivity(){
         val homeButton: Button = findViewById(R.id.homeButton)
 
         homeButton.setOnClickListener {
+            Toast.makeText(this, resources.getString(R.string.toast_message), Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
