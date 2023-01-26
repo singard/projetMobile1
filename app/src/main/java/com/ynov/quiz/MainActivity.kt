@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import com.ynov.quiz.databinding.ActivityMainBinding
 import android.app.DatePickerDialog;
+import android.content.Intent
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -67,7 +68,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        validateBtn.setOnClickListener {  }
+        validateBtn.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun updateLabel(myCalendar: Calendar) {
