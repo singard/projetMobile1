@@ -2,9 +2,11 @@ package com.ynov.quiz
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 
 class ResultActivity: AppCompatActivity() {
 
@@ -14,6 +16,10 @@ class ResultActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
+        val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
+        toolbar.title = "Résultats"
+        setSupportActionBar(toolbar)
 
         resultLabel = findViewById<TextView>(R.id.result_label)
         validateBtn = findViewById<Button>(R.id.restart)

@@ -26,4 +26,6 @@
     <string name="tell_us_about_you">Dites nous en plus sur vous</string>
 
     <string name="number_of_champ_wins">Combien de fois l\'OM a t\'il remporté le championnat ?</string>
+    <string name="restart">Rejouer</string>
+    <string name="validate">Valider</string>
 </resources>

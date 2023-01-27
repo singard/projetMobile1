@@ -2,8 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/blue_om">
+    </androidx.appcompat.widget.Toolbar>
 
     <TextView
         android:id="@+id/result_label"
@@ -21,7 +30,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue_om"
-        android:text="Rejouer"
+        android:text="@string/restart"
+        android:layout_margin="20dp"
         />
 
 </LinearLayout>

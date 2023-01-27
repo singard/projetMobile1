@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import androidx.appcompat.widget.Toolbar
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -29,6 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
+        toolbar.title = "Inscription"
+        setSupportActionBar(toolbar)
 
         dateButton = findViewById<Button>(R.id.datepicker_birthday)
         sexeSpinner = findViewById<Spinner>(R.id.sexe_spinner)
