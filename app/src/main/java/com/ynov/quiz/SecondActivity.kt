@@ -50,8 +50,6 @@ class SecondActivity: AppCompatActivity() {
                 numberOfGoodAnswer += 1;
             }
 
-            Log.d("ICI", numberOfWinChamp.toString())
-
             if (numberOfWinChamp.compareTo(9.0) == 0) {
                 numberOfGoodAnswer += 1;
             }
