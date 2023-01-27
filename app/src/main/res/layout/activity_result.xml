@@ -13,15 +13,18 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:textColor="@color/blue_om"
+        android:textColor="?attr/colorPrimary"
+
         />
 
     <Button
         android:id="@+id/restart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/blue_om"
+        android:backgroundTint="?attr/colorPrimary"
         android:text="Rejouer"
+        android:textColor="?attr/colorOnPrimary"
+
         />
 
 </LinearLayout>

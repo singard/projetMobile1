@@ -9,12 +9,11 @@
         android:id="@+id/before_start_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:text="@string/before_start"
         android:textSize="15sp"
         android:textStyle="normal"
         android:gravity="center"
-        android:textColor="@color/black" />
+        android:textColor="?attr/colorPrimary" />
 
     <TextView
         android:id="@+id/register_form_label"
@@ -24,7 +23,7 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:textColor="@color/blue_om"
+        android:textColor="?attr/colorPrimary"
         />
     
     <EditText
@@ -32,7 +31,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/firstname"
+        android:textColorHint="?attr/colorPrimary"
         android:layout_marginTop="30dp"
+        android:textColor="?attr/colorPrimary"
+
         />
 
     <EditText
@@ -40,6 +42,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/lastname"
+        android:textColorHint="?attr/colorPrimary"
+        android:textColor="?attr/colorPrimary"
         />
 
     <EditText
@@ -48,6 +52,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="+33"
+        android:textColorHint="?attr/colorPrimary"
+        android:textColor="?attr/colorPrimary"
         />
 
     <TextView
@@ -55,6 +61,7 @@
         android:layout_height="wrap_content"
         android:text="Date de naissance:"
         android:padding="5dp"
+        android:textColor="?attr/colorPrimary"
         />
 
     <Button
@@ -63,7 +70,7 @@
         android:layout_height="wrap_content"
         android:text="01/01/2000"
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textColor="?attr/colorSecondary"
         style="?android:spinnerStyle"
         />
 
@@ -72,21 +79,22 @@
         android:layout_height="wrap_content"
         android:text="Sexe:"
         android:padding="5dp"
+        android:textColor="?attr/colorPrimary"
         />
 
     <Spinner
         android:id="@+id/sexe_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorPrimary"
         android:minHeight="40dp"
-        />
+        android:textColor="?attr/colorSecondary" />
 
     <Button
         android:id="@+id/validate_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/blue_om"
-        android:text="Valider"
-        />
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="Valider" />
 
 </LinearLayout>
