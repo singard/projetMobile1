@@ -87,9 +87,9 @@
         android:id="@+id/sexe_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="?attr/colorPrimary"
         android:minHeight="40dp"
-        android:textColor="?attr/colorSecondary" />
+        style="?android:spinnerStyle"
+    />
 
     <Button
         android:id="@+id/validate_form"
