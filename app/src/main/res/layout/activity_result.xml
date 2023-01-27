@@ -10,8 +10,8 @@
         android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:titleTextColor="@android:color/white"
-        android:background="@color/blue_om">
+        app:titleTextColor="?attr/colorOnPrimary"
+        android:background="?attr/colorOnPrimary">
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
@@ -22,16 +22,18 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:textColor="@color/blue_om"
+        android:textColor="?attr/colorPrimary"
+
         />
 
     <Button
         android:id="@+id/restart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/blue_om"
-        android:text="@string/restart"
-        android:layout_margin="20dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="Rejouer"
+        android:textColor="?attr/colorOnPrimary"
+
         />
 
 </LinearLayout>

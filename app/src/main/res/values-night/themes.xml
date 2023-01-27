@@ -1,14 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.QuizDevMobile" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.QuizDevMobile.dark" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/bluePrimaryLight</item>
         <item name="colorPrimaryVariant">@color/bluePrimaryVariantLight</item>
-        <item name="colorOnPrimary">@color/PrimaryWhite</item>
+        <item name="colorOnPrimary">@color/PrimaryBlack</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/blueSecondaryLight</item>
         <item name="colorSecondaryVariant">@color/blueSecondaryVariantLight</item>
-        <item name="colorOnSecondary">@color/PrimaryBlack</item>
+        <item name="colorOnSecondary">@color/PrimaryWhite</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
