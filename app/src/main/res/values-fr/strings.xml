@@ -5,6 +5,8 @@
     <string name="action_settings">paramettre</string>
     <string name="firstname">Prénom</string>
     <string name="lastname">Nom</string>
+    <string name="restart">Rejouer</string>
+    <string name="validate">Valider</string>
     <string name="prompt_email">Email</string>
     <string name="invalid_username">se n\'est pas un nom valide</string>
     <string name="invalid_password">"le mot de passe "</string>

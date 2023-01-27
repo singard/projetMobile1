@@ -2,9 +2,13 @@ package com.ynov.quiz
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 
 class ResultActivity: AppCompatActivity() {
 
@@ -14,6 +18,10 @@ class ResultActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
+        val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
+        toolbar.title = "Résultats"
+        setSupportActionBar(toolbar)
 
         resultLabel = findViewById<TextView>(R.id.result_label)
         validateBtn = findViewById<Button>(R.id.restart)
@@ -37,6 +45,26 @@ class ResultActivity: AppCompatActivity() {
 
             startActivity(intent)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.action_favorite->{
+                // TODO: Light Mode
+                true
+            }
+            R.id.action_settings->{
+                // TODO: Dark Mode
+                true
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 }

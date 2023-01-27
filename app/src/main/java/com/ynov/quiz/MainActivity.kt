@@ -6,11 +6,14 @@ import android.view.View
 import com.ynov.quiz.databinding.ActivityMainBinding
 import android.app.DatePickerDialog;
 import android.content.Intent
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import androidx.appcompat.widget.Toolbar
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -29,6 +32,10 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
+        toolbar.title = "Inscription"
+        setSupportActionBar(toolbar)
 
         dateButton = findViewById<Button>(R.id.datepicker_birthday)
         sexeSpinner = findViewById<Spinner>(R.id.sexe_spinner)
@@ -77,6 +84,26 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.action_favorite->{
+                // TODO: Light Mode
+                true
+            }
+            R.id.action_settings->{
+                // TODO: Dark Mode
+                true
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun updateLabel(myCalendar: Calendar) {
