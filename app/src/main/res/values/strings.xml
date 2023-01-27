@@ -27,4 +27,6 @@
 
     <string name="number_of_champ_wins">Combien de fois l\'OM a t\'il remporté le championnat ?</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="dark_mode">mode nuit</string>
+    <string name="light_mode">mode jour</string>
 </resources>
