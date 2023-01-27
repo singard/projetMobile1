@@ -4,17 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#009CDB">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        tools:ignore="MissingConstraints" />
+    android:background="?attr/colorSecondary">
 
     <TextView
         android:id="@+id/textView"
@@ -46,6 +36,10 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <Button
+        android:shadowColor="?attr/colorOnPrimary"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
         android:id="@+id/homeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,6 +47,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:background="?attr/colorPrimary"
+        android:textColor="?attr/colorOnPrimary"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

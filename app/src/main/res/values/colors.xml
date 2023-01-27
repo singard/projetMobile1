@@ -5,8 +5,19 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
     <color name="blue_om">#009EDD</color>
     <color name="grey_light">#8C8C8C</color>
+
+    <color name="PrimaryBlack">#FF000000</color>
+    <color name="PrimaryWhite">#FFFFFFFF</color>
+
+    <color name="bluePrimaryLight">#66004966</color>
+    <color name="bluePrimaryVariantLight">#A60077A6</color>
+
+    <color name="blueSecondaryLight">#009EDD</color>
+    <color name="blueSecondaryVariantLight">#CC0092CC</color>
+
+
+
+
 </resources>
