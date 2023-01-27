@@ -39,11 +39,13 @@ class HomeActivity : AppCompatActivity(){
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.action_favorite->{
-                // TODO: Light Mode
+                setTheme(R.style.Theme_QuizDevMobile);
+                recreate();
                 true
             }
             R.id.action_settings->{
-                // TODO: Dark Mode
+                setTheme(R.style.Theme_QuizDevMobile);
+                recreate();
                 true
             }
 

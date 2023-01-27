@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorOnPrimary"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
@@ -10,8 +11,8 @@
         android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:titleTextColor="@android:color/white"
-        android:background="@color/blue_om">
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="?attr/colorOnPrimary">
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
@@ -33,7 +34,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="30sp"
-        android:textColor="@color/blue_om"/>
+        android:textColor="?attr/colorPrimary"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -41,14 +42,17 @@
         android:gravity="center"
         android:textSize="20sp"
         android:paddingTop="30dp"
-        android:text="@string/year_win_ldc"/>
+        android:text="@string/year_win_ldc"
+        android:textColor="?attr/colorPrimary"/>
 
     <EditText
         android:id="@+id/result_year"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="@string/year"/>
+        android:hint="@string/year"
+        android:textColorHint="?attr/colorPrimary"
+        android:textColor="?attr/colorPrimary"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -56,7 +60,8 @@
         android:gravity="center"
         android:textSize="20sp"
         android:paddingTop="30dp"
-        android:text="@string/number_of_champ_wins"/>
+        android:text="@string/number_of_champ_wins"
+        android:textColor="?attr/colorPrimary"/>
 
     <com.google.android.material.slider.Slider
         android:id="@+id/result_number_champ"
@@ -65,15 +70,16 @@
         android:stepSize="1.0"
         android:value="0"
         android:valueFrom="0"
-        android:valueTo="20" />
+        android:valueTo="20"
+        android:textColor="?attr/colorPrimary"/>
 
     <Button
         android:id="@+id/validate_quizz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/blue_om"
-        android:text="@string/validate"
-        android:layout_margin="20dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="Valider"
+        android:textColor="?attr/colorOnPrimary"
         />
 
 </LinearLayout>

@@ -4,9 +4,6 @@
     <string name="action_sign_in">Sign in or register</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
-    <string name="restart">Restart</string>
-    <string name="validate">Validate</string>
-    <string name="login_failed">Login failed</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -18,8 +15,6 @@
     <string name="toast_message">go</string>
     <string name="year_win_ldc">In which year did OM win the Champions League?</string>
     <string name="before_start">Before you start</string>
-    <string name="firstname">Firstname</string>
-    <string name="lastname">Lastname</string>
     <string name="tell_us_about_you">Tell us more about yourself</string>
     <string name="year">year</string>
     <string name="number_of_champ_wins">How many times has OM won the championship?</string>

@@ -18,7 +18,7 @@
     <string name="before_start">Avant de commencer</string>
 
 
-    <string name="action_sign_in">Connectez-vous ou inscrivez-vous</string>
+    <string name="action_sign_in">Sign in or register</string>
     <string name="large_text">yo comment va ?</string>
     <string name="action_settings">paramettre</string>
     <string name="firstname">Prénom</string>
@@ -26,8 +26,7 @@
     <string name="tell_us_about_you">Dites nous en plus sur vous</string>
 
     <string name="number_of_champ_wins">Combien de fois l\'OM a t\'il remporté le championnat ?</string>
-    <string name="restart">Rejouer</string>
-    <string name="validate">Valider</string>
-    <string name="light_mode">Light mode</string>
-    <string name="dark_mode">Dark mode</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="dark_mode">mode nuit</string>
+    <string name="light_mode">mode jour</string>
 </resources>
