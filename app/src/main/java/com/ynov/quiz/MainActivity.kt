@@ -6,6 +6,8 @@ import android.view.View
 import com.ynov.quiz.databinding.ActivityMainBinding
 import android.app.DatePickerDialog;
 import android.content.Intent
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -82,6 +84,26 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.action_favorite->{
+                // TODO: Light Mode
+                true
+            }
+            R.id.action_settings->{
+                // TODO: Dark Mode
+                true
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun updateLabel(myCalendar: Calendar) {

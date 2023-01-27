@@ -2,6 +2,8 @@ package com.ynov.quiz
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -43,6 +45,26 @@ class ResultActivity: AppCompatActivity() {
 
             startActivity(intent)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.action_favorite->{
+                // TODO: Light Mode
+                true
+            }
+            R.id.action_settings->{
+                // TODO: Dark Mode
+                true
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 }
