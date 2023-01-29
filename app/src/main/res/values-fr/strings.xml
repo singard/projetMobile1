@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">quiz</string>
-    <string name="large_text">yo comment va ?</string>
-    <string name="action_settings">paramettre</string>
+    <string name="app_name">Quiz OM</string>
+    <string name="firstname">Prénom</string>
+    <string name="lastname">Nom</string>
+    <string name="restart">Rejouer</string>
+    <string name="validate">Valider</string>
+    <string name="dark_mode">mode nuit</string>
+    <string name="light_mode">mode jour</string>
+    <string name="my_informations">Mes informations</string>
+    <string name="quiz_om">Quiz OM</string>
+    <string name="navigation_menu_label">Slider vers la droite pour faire apparaitre le menu de navigation</string>
+    <string name="welcome_app_label">Bienvenue sur l\'application de Quiz</string>
+    <string name="invalid_username">se n\'est pas un nom valide</string>
+    <string name="invalid_password">"le mot de passe "</string>
+    <string name="first_fragment_label">premier fragment</string>
+    <string name="second_fragment_label">second fragment</string>
+    <string name="next">suivant</string>
+    <string name="previous">retour</string>
+    <string name="hello_first_fragment">salut premier fragment</string>
+    <string name="hello_second_fragment">salut second fragment</string>
+    <string name="homeButton">bienvenue cliquer pour commencer</string>
+    <string name="toast_message">salut c\'est partie</string>
+    <string name="year_win_ldc">En quelle année l\'OM a remporté la ligue des champions ?</string>
+    <string name="before_start">Avant de commencer</string>
+    <string name="tell_us_about_you">Dites nous en plus sur vous</string>
+    <string name="year">année</string>
+    <string name="number_of_champ_wins">Combien de fois l\'OM a t\'il remporté le championnat ?</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
 </resources>

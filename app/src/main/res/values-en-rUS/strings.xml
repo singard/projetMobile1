@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">quizDevMobile</string>
+    <string name="app_name">Quiz OM</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="homeButton">welcome</string>
+    <string name="toast_message">go</string>
+    <string name="year_win_ldc">In which year did OM win the Champions League?</string>
+    <string name="before_start">Before you start</string>
+    <string name="tell_us_about_you">Tell us more about yourself</string>
+    <string name="year">year</string>
+    <string name="number_of_champ_wins">How many times has OM won the championship?</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="validate">Validate</string>
+    <string name="restart">Restart</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="dark_mode">dark mode</string>
+    <string name="light_mode">light mode</string>
+    <string name="my_informations">My informations</string>
+    <string name="quiz_om">Quiz OM</string>
+    <string name="navigation_menu_label">Slider to the right to bring up the navigation menu</string>
+    <string name="welcome_app_label">Welcome to the Quiz application</string>
 </resources>
