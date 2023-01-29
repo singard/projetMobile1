@@ -13,7 +13,10 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -26,6 +29,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dateButton: Button
     private lateinit var sexeSpinner: Spinner
     private lateinit var validateBtn: Button
+    private lateinit var drawerLayout: DrawerLayout
+    private lateinit var navigationView: NavigationView
+    private lateinit var toggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +49,12 @@ class MainActivity : AppCompatActivity() {
         firstnameTF = findViewById<EditText>(R.id.firstname)
         lastnameTF = findViewById<EditText>(R.id.lastname)
         phoneTF = findViewById<EditText>(R.id.phone_number)
+        drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        navigationView = findViewById<NavigationView>(R.id.navigation)
+
+        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
 
         val myCalendar = Calendar.getInstance()
         val datePicker = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->

@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.slider.Slider
+import java.util.*
 
 class SecondActivity: AppCompatActivity() {
 
@@ -35,7 +36,12 @@ class SecondActivity: AppCompatActivity() {
 
         val firstname = bundle!!.getString("firstname")
 
-        quizzFirstname.text = "Bienvenue $firstname"
+        if(Locale.getDefault().displayLanguage == "en") {
+            quizzFirstname.text = "Welcome $firstname"
+        } else {
+            quizzFirstname.text = "Bienvenue $firstname"
+        }
+
         var numberOfWinChamp = resultNumberChamp.value
 
         resultNumberChamp.addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
