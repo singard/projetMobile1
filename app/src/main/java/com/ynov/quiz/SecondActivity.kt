@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.slider.Slider
+import com.ynov.quiz.utils.ThemeManager
 import java.util.*
 
 class SecondActivity: AppCompatActivity() {
@@ -20,6 +21,7 @@ class SecondActivity: AppCompatActivity() {
     private lateinit var resultNumberChamp: Slider
     private lateinit var validateBtn: Button
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemeManager.themeSelect(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 

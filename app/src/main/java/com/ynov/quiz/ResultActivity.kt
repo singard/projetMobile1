@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.ynov.quiz.utils.ThemeManager
 
 class ResultActivity: AppCompatActivity() {
 
@@ -16,6 +17,7 @@ class ResultActivity: AppCompatActivity() {
     private lateinit var validateBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemeManager.themeSelect(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
