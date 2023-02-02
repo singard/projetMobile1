@@ -9,14 +9,37 @@ import com.ynov.quiz.R
 
 class ThemeManager {
 
+
+
     companion object {
+        private var themeSelect = Theme.AUTOMATIC
+        private val classeName : String = "ThemeManager"
+
+        fun setTheme(activity: Activity,theme : Theme ){
+            this.themeSelect = theme
+            themeSelect(activity)
+            activity.recreate();
+        }
+
+        fun themeSelect(activity: Activity){
+
+            when (themeSelect) {
+                Theme.LIGHT-> setLightTheme(activity)
+                Theme.DARK -> setDarkTheme(activity)
+                Theme.AUTOMATIC -> setAutomaticTheme(activity)
+                else -> Log.i("classeName","not theme found")
+            }
+
+        }
 
         fun setDarkTheme(activity: Activity) {
             activity.setTheme(R.style.DarkTheme)
+            Log.i(classeName,"dark theme install");
         }
 
         fun setLightTheme(activity: Activity) {
             activity.setTheme(R.style.LightTheme)
+            Log.i(classeName,"light theme install");
 
         }
 
@@ -29,10 +52,14 @@ class ThemeManager {
                     Configuration.UI_MODE_NIGHT_UNDEFINED -> activity.setTheme(R.style.LightTheme)
                 }
             } else {
+                Log.i(classeName,"default theme");
                 activity.setTheme(R.style.LightTheme)
+
 
             }
 
         }
+
+
     }
 }

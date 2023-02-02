@@ -15,6 +15,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 
 import com.google.android.material.navigation.NavigationView
+import com.ynov.quiz.utils.Theme
 import com.ynov.quiz.utils.ThemeManager
 
 class HomeActivity : AppCompatActivity() {
@@ -23,10 +24,13 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var navigationView: NavigationView
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var begin_btn: Button
+    private val classeName : String = "HomeActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemeManager.themeSelect(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
 
         val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
         toolbar.title = "Quiz OM"
@@ -51,7 +55,7 @@ class HomeActivity : AppCompatActivity() {
         super.onStart()
         navigationView.setNavigationItemSelectedListener {menuItem ->
             if(menuItem.itemId == R.id.informations_item) {
-                Log.d("TAG", "MY INFORMATIONS")
+
             }
             drawerLayout.closeDrawer(GravityCompat.START)
             true
@@ -66,20 +70,20 @@ class HomeActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.action_light->{
-                ThemeManager.setDarkTheme(this)
-                recreate();
+                Log.d(classeName, "action light select")
+                ThemeManager.setTheme(this,Theme.LIGHT)
                 true
 
             }
             R.id.action_night->{
-                ThemeManager.setLightTheme(this)
-                recreate();
+                Log.d(classeName, "action night select")
+                ThemeManager.setTheme(this,Theme.DARK)
                 true
 
             }
             R.id.action_automatic->{
-                ThemeManager.setAutomaticTheme(this)
-                recreate();
+                Log.d(classeName, "action automatic select")
+                ThemeManager.setTheme(this,Theme.AUTOMATIC)
                 true
 
             }

@@ -15,6 +15,7 @@
             android:name=".MainActivity"
             android:exported="false"
             android:label="title_activity_main2"
+            android:theme="@style/LightTheme"
            />
         <activity
             android:name=".SecondActivity"
