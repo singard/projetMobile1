@@ -13,8 +13,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.drawerlayout.widget.DrawerLayout.DrawerListener
+
 import com.google.android.material.navigation.NavigationView
+import com.ynov.quiz.utils.ThemeManager
 
 class HomeActivity : AppCompatActivity() {
 
@@ -64,17 +65,32 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.action_favorite->{
-                setTheme(R.style.Theme_QuizDevMobile);
+            R.id.action_light->{
+                ThemeManager.setDarkTheme(this)
                 recreate();
                 true
+
             }
-            R.id.action_settings->{
-                setTheme(R.style.Theme_QuizDevMobile);
+            R.id.action_night->{
+                ThemeManager.setLightTheme(this)
                 recreate();
                 true
+
+            }
+            R.id.action_automatic->{
+                ThemeManager.setAutomaticTheme(this)
+                recreate();
+                true
+
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        if (drawerLayout != null && drawerLayout.isOpen()) {
+            drawerLayout.close()
+        }
     }
 }

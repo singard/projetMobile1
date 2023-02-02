@@ -105,11 +105,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.action_favorite->{
+            R.id.action_light->{
                 // TODO: Light Mode
                 true
             }
-            R.id.action_settings->{
+            R.id.action_night->{
                 // TODO: Dark Mode
                 true
             }
