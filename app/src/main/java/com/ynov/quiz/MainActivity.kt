@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import com.ynov.quiz.databinding.ActivityMainBinding
-import android.app.DatePickerDialog;
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.view.Menu
 import android.view.MenuItem
@@ -20,7 +20,7 @@ import com.google.android.material.navigation.NavigationView
 import java.text.SimpleDateFormat
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var firstnameTF: EditText
     private lateinit var lastnameTF: EditText
@@ -43,18 +43,20 @@ class MainActivity : AppCompatActivity() {
         toolbar.title = "Inscription"
         setSupportActionBar(toolbar)
 
-        dateButton = findViewById<Button>(R.id.datepicker_birthday)
-        sexeSpinner = findViewById<Spinner>(R.id.sexe_spinner)
-        validateBtn = findViewById<Button>(R.id.validate_form)
-        firstnameTF = findViewById<EditText>(R.id.firstname)
-        lastnameTF = findViewById<EditText>(R.id.lastname)
-        phoneTF = findViewById<EditText>(R.id.phone_number)
-        drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
-        navigationView = findViewById<NavigationView>(R.id.navigation)
+        dateButton = findViewById(R.id.datepicker_birthday)
+        sexeSpinner = findViewById(R.id.sexe_spinner)
+        validateBtn = findViewById(R.id.validate_form)
+        firstnameTF = findViewById(R.id.firstname)
+        lastnameTF = findViewById(R.id.lastname)
+        phoneTF = findViewById(R.id.phone_number)
+        drawerLayout = findViewById(R.id.drawer_layout)
+        navigationView = findViewById(R.id.navigation)
 
-        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
+
+        navigationView.setNavigationItemSelectedListener(this)
 
         val myCalendar = Calendar.getInstance()
         val datePicker = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
@@ -66,9 +68,9 @@ class MainActivity : AppCompatActivity() {
 
         val options = arrayOf("Homme", "Femme", "Non binaire")
 
-        var sexe = options[0];
+        var sexe = options[0]
 
-        sexeSpinner.adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options)
+        sexeSpinner.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, options)
 
         dateButton.setOnClickListener {
             DatePickerDialog(this, datePicker, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show()
@@ -121,6 +123,15 @@ class MainActivity : AppCompatActivity() {
     private fun updateLabel(myCalendar: Calendar) {
         val myFormat = "dd/MM/yyyy"
         val sdf = SimpleDateFormat(myFormat, Locale.FRANCE)
-        dateButton.setText(sdf.format(myCalendar.time))
+        dateButton.text = sdf.format(myCalendar.time)
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when(item.itemId) {
+            R.id.informations_item->{
+                finish()
+            }
+        }
+        return true
     }
 }

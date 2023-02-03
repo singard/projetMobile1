@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.drawerlayout.widget.DrawerLayout.DrawerListener
 import com.google.android.material.navigation.NavigationView
 
 class HomeActivity : AppCompatActivity() {
@@ -31,11 +30,11 @@ class HomeActivity : AppCompatActivity() {
         toolbar.title = "Quiz OM"
         setSupportActionBar(toolbar)
 
-        drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
-        navigationView = findViewById<NavigationView>(R.id.navigation)
+        drawerLayout = findViewById(R.id.drawer_layout)
+        navigationView = findViewById(R.id.navigation)
         begin_btn = findViewById(R.id.begin_btn)
 
-        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
@@ -65,13 +64,13 @@ class HomeActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.action_favorite->{
-                setTheme(R.style.Theme_QuizDevMobile);
-                recreate();
+                setTheme(R.style.Theme_QuizDevMobile)
+                recreate()
                 true
             }
             R.id.action_settings->{
-                setTheme(R.style.Theme_QuizDevMobile);
-                recreate();
+                setTheme(R.style.Theme_QuizDevMobile)
+                recreate()
                 true
             }
         }
