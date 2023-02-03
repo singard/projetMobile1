@@ -36,11 +36,11 @@ class HomeActivity : AppCompatActivity() {
         toolbar.title = "Quiz OM"
         setSupportActionBar(toolbar)
 
-        drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
-        navigationView = findViewById<NavigationView>(R.id.navigation)
+        drawerLayout = findViewById(R.id.drawer_layout)
+        navigationView = findViewById(R.id.navigation)
         begin_btn = findViewById(R.id.begin_btn)
 
-        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
