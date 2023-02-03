@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.slider.Slider
+import com.ynov.quiz.utils.ThemeManager
 import java.util.*
 
 class SecondActivity: AppCompatActivity() {
@@ -20,6 +21,7 @@ class SecondActivity: AppCompatActivity() {
     private lateinit var resultNumberChamp: Slider
     private lateinit var validateBtn: Button
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemeManager.themeSelect(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
@@ -81,11 +83,11 @@ class SecondActivity: AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.action_favorite->{
+            R.id.action_light->{
                 // TODO: Light Mode
                 true
             }
-            R.id.action_settings->{
+            R.id.action_night->{
                 // TODO: Dark Mode
                 true
             }

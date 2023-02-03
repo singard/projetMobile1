@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.ynov.quiz.utils.ThemeManager
 
 class ResultActivity: AppCompatActivity() {
 
@@ -16,6 +17,7 @@ class ResultActivity: AppCompatActivity() {
     private lateinit var validateBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemeManager.themeSelect(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
@@ -54,11 +56,11 @@ class ResultActivity: AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.action_favorite->{
+            R.id.action_light->{
                 // TODO: Light Mode
                 true
             }
-            R.id.action_settings->{
+            R.id.action_night->{
                 // TODO: Dark Mode
                 true
             }
