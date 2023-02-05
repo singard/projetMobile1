@@ -6,6 +6,7 @@ import android.view.View
 import com.ynov.quiz.databinding.ActivityMainBinding
 import android.app.DatePickerDialog
 import android.content.Intent
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.AdapterView
@@ -17,6 +18,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import com.ynov.quiz.utils.Theme
 import com.ynov.quiz.utils.ThemeManager
 import java.text.SimpleDateFormat
 import java.util.*
@@ -33,6 +35,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
     private lateinit var toggle: ActionBarDrawerToggle
+    private val classeName : String = "MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         ThemeManager.themeSelect(this)
@@ -110,12 +113,22 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.action_light->{
-                // TODO: Light Mode
+                Log.d(classeName, "action light select")
+                ThemeManager.setTheme(this, Theme.LIGHT)
                 true
+
             }
             R.id.action_night->{
-                // TODO: Dark Mode
+                Log.d(classeName, "action night select")
+                ThemeManager.setTheme(this, Theme.DARK)
                 true
+
+            }
+            R.id.action_automatic->{
+                Log.d(classeName, "action automatic select")
+                ThemeManager.setTheme(this, Theme.AUTOMATIC)
+                true
+
             }
 
         }

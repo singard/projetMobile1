@@ -2,6 +2,7 @@ package com.ynov.quiz
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -9,12 +10,14 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.ynov.quiz.utils.Theme
 import com.ynov.quiz.utils.ThemeManager
 
 class ResultActivity: AppCompatActivity() {
 
     private lateinit var resultLabel: TextView
     private lateinit var validateBtn: Button
+    private val classeName : String = "ResultActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         ThemeManager.themeSelect(this)
@@ -57,12 +60,22 @@ class ResultActivity: AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.action_light->{
-                // TODO: Light Mode
+                Log.d(classeName, "action light select")
+                ThemeManager.setTheme(this, Theme.LIGHT)
                 true
+
             }
             R.id.action_night->{
-                // TODO: Dark Mode
+                Log.d(classeName, "action night select")
+                ThemeManager.setTheme(this, Theme.DARK)
                 true
+
+            }
+            R.id.action_automatic->{
+                Log.d(classeName, "action automatic select")
+                ThemeManager.setTheme(this, Theme.AUTOMATIC)
+                true
+
             }
 
         }
