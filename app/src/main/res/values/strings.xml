@@ -11,28 +11,35 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="homeButton">welcome</string>
-    <string name="toast_message">salut c\'est partie</string>
-    <string name="year">année</string>
-    <string name="year_win_ldc">En quelle année l\'OM a remporté la ligue des champions ?</string>
+    <string name="toast_message">go</string>
+    <string name="year">year</string>
+    <string name="year_win_ldc">In which year did OM win the Champions League?</string>
 
-    <string name="before_start">Avant de commencer</string>
+    <string name="before_start">Before you start</string>
 
 
-    <string name="firstname">Prénom</string>
-    <string name="lastname">Nom</string>
-    <string name="tell_us_about_you">Dites nous en plus sur vous</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="tell_us_about_you">Tell us more about yourself</string>
 
-    <string name="number_of_champ_wins">Combien de fois l\'OM a t\'il remporté le championnat ?</string>
-    <string name="dark_mode">mode nuit</string>
-    <string name="light_mode">mode jour</string>
-    <string name="my_informations">Mes informations</string>
+    <string name="number_of_champ_wins">How many times has OM won the championship?</string>
+    <string name="dark_mode">dark mode</string>
+    <string name="light_mode">light mode</string>
+    <string name="my_informations">My informations</string>
     <string name="quiz_om">Quiz OM</string>
     <string name="navigation_drawer_open">navigation_drawer_open</string>
     <string name="navigation_drawer_close">navigation_drawer_close</string>
-    <string name="navigation_menu_label">Slider vers la droite pour faire apparaitre le menu de navigation</string>
-    <string name="welcome_app_label">Bienvenue sur l\'application de Quiz</string>
+    <string name="navigation_menu_label">Slider to the right to bring up the navigation menu</string>
+    <string name="welcome_app_label">Welcome to the Quiz application</string>
     <string name="restart">Restart</string>
-    <string name="validate">Valider</string>
-    <string name="auto_mode">mode automatique</string>
+    <string name="validate">Validate</string>
+    <string name="auto_mode">automatic mode</string>
     <string name="themeManag" translatable="false">themeManag</string>
+    <string name="text_result_0">You don\'t have a good answer, try again!</string>
+    <string name="text_result_1">You have a good answer, try again to find the second one</string>
+    <string name="text_result_2">Well done! You just got it!</string>
+    <string name="Date_of_birth">Date of birth</string>
+    <string name="sex">Sex :</string>
+    <string name="phoneNumber" translatable="false">+33</string>
+    <string name="date_ex" translatable="false">01/02/1999</string>
 </resources>

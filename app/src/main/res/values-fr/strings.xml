@@ -29,4 +29,9 @@
     <string name="navigation_drawer_open">navigation_drawer_open</string>
     <string name="navigation_drawer_close">navigation_drawer_close</string>
     <string name="auto_mode">mode automatique</string>
+    <string name="text_result_0">Vous n\'avez aucune bonne réponse, réessayez !</string>
+    <string name="text_result_1">Vous avez une bonne réponse, réessayez pour trouver la deuxième</string>
+    <string name="text_result_2">Bravo ! Vous avez tout juste !</string>
+    <string name="Date_of_birth">Date de naissance</string>
+    <string name="sex">Sexe :</string>
 </resources>

@@ -36,11 +36,11 @@ class ResultActivity: AppCompatActivity() {
         val firstname = bundle!!.getString("firstname")
 
         if (goodAnswers!!.equals("0")) {
-            resultLabel.text = "Vous n'avez aucune bonne réponse, réessayez !"
+            resultLabel.text = R.string.text_result_0.toString()
         } else if (goodAnswers!!.equals("1")) {
-            resultLabel.text = "Vous avez une bonne réponse, réessayez pour trouver la deuxième"
+            resultLabel.text = R.string.text_result_1.toString()
         } else {
-            resultLabel.text = "Bravo ! Vous avez tout juste !"
+            resultLabel.text = R.string.text_result_2.toString()
         }
 
         validateBtn.setOnClickListener {
@@ -62,20 +62,14 @@ class ResultActivity: AppCompatActivity() {
             R.id.action_light->{
                 Log.d(classeName, "action light select")
                 ThemeManager.setTheme(this,this, Theme.LIGHT)
-                true
-
             }
             R.id.action_night->{
                 Log.d(classeName, "action night select")
                 ThemeManager.setTheme(this,this, Theme.DARK)
-                true
-
             }
             R.id.action_automatic->{
                 Log.d(classeName, "action automatic select")
                 ThemeManager.setTheme(this,this, Theme.AUTOMATIC)
-                true
-
             }
 
         }

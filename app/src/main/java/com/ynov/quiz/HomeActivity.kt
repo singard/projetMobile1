@@ -72,19 +72,15 @@ class HomeActivity : AppCompatActivity() {
             R.id.action_light->{
                 Log.d(classeName, "action light select")
                 ThemeManager.setTheme(this,this, Theme.LIGHT)
-                true
-
             }
             R.id.action_night->{
                 Log.d(classeName, "action night select")
                 ThemeManager.setTheme(this,this, Theme.DARK)
-                true
 
             }
             R.id.action_automatic->{
                 Log.d(classeName, "action automatic select")
                 ThemeManager.setTheme(this,this, Theme.AUTOMATIC)
-                true
 
             }
 
@@ -94,7 +90,7 @@ class HomeActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
-        if (drawerLayout != null && drawerLayout.isOpen()) {
+        if ( drawerLayout.isOpen()) {
             drawerLayout.close()
         }
     }
