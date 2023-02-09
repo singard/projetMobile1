@@ -35,7 +35,7 @@ class SecondActivity: AppCompatActivity() {
         quizzFirstname = findViewById<TextView>(R.id.quizz_firstname)
         validateBtn = findViewById<Button>(R.id.validate_quizz)
         resultYear = findViewById<EditText>(R.id.result_year)
-        //resultNumberChamp = findViewById<Slider>(R.id.result_number_champ)
+        resultNumberChamp = findViewById<Slider>(R.id.result_number_champ)
 
         val bundle: Bundle? = intent.extras
 
@@ -47,7 +47,7 @@ class SecondActivity: AppCompatActivity() {
             quizzFirstname.text = "Bienvenue $firstname"
         }
 
-       /** var numberOfWinChamp = resultNumberChamp.value
+       var numberOfWinChamp = resultNumberChamp.value
 
        resultNumberChamp.addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
             override fun onStartTrackingTouch(slider: Slider) {
@@ -57,7 +57,7 @@ class SecondActivity: AppCompatActivity() {
             override fun onStopTrackingTouch(slider: Slider) {
                 numberOfWinChamp = slider.value;
             }
-        })**/
+        })
 
         validateBtn.setOnClickListener {
             val intent = Intent(this, ResultActivity::class.java)
@@ -67,9 +67,9 @@ class SecondActivity: AppCompatActivity() {
                 numberOfGoodAnswer += 1;
             }
 
-            /**if (numberOfWinChamp.compareTo(9.0) == 0) {
+            if (numberOfWinChamp.compareTo(9.0) == 0) {
                 numberOfGoodAnswer += 1;
-            }**/
+            }
 
             intent.putExtra("goodAnswers", numberOfGoodAnswer.toString())
 
@@ -88,23 +88,19 @@ class SecondActivity: AppCompatActivity() {
         when(item.itemId){
             R.id.action_light->{
                 Log.d(classeName, "action light select")
-                ThemeManager.setTheme(this, Theme.LIGHT)
+                ThemeManager.setTheme(this,this, Theme.LIGHT)
                 true
-
             }
             R.id.action_night->{
                 Log.d(classeName, "action night select")
-                ThemeManager.setTheme(this, Theme.DARK)
+                ThemeManager.setTheme(this,this, Theme.DARK)
                 true
-
             }
             R.id.action_automatic->{
                 Log.d(classeName, "action automatic select")
-                ThemeManager.setTheme(this, Theme.AUTOMATIC)
+                ThemeManager.setTheme(this,this, Theme.AUTOMATIC)
                 true
-
             }
-
         }
         return super.onOptionsItemSelected(item)
     }
