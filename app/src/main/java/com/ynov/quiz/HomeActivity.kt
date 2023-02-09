@@ -71,22 +71,23 @@ class HomeActivity : AppCompatActivity() {
         when(item.itemId){
             R.id.action_light->{
                 Log.d(classeName, "action light select")
-                ThemeManager.setTheme(this,Theme.LIGHT)
+                ThemeManager.setTheme(this,this, Theme.LIGHT)
                 true
 
             }
             R.id.action_night->{
                 Log.d(classeName, "action night select")
-                ThemeManager.setTheme(this,Theme.DARK)
+                ThemeManager.setTheme(this,this, Theme.DARK)
                 true
 
             }
             R.id.action_automatic->{
                 Log.d(classeName, "action automatic select")
-                ThemeManager.setTheme(this,Theme.AUTOMATIC)
+                ThemeManager.setTheme(this,this, Theme.AUTOMATIC)
                 true
 
             }
+
         }
         return super.onOptionsItemSelected(item)
     }
