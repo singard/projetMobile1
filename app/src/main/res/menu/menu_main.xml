@@ -3,11 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_favorite"
-        android:title="@string/light_mode"
-        app:showAsAction="never"/>
+        android:id="@+id/action_light"
+        android:title="@string/light_mode" />
 
-    <item android:id="@+id/action_settings"
-        android:title="@string/dark_mode"
-        app:showAsAction="never"/>
+    <item android:id="@+id/action_night"
+        android:title="@string/dark_mode" />
+
+    <item android:id="@+id/action_automatic"
+        android:title="@string/auto_mode"/>
 </menu>

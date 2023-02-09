@@ -2,6 +2,7 @@ package com.ynov.quiz
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -11,6 +12,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.slider.Slider
+import com.ynov.quiz.utils.Theme
+import com.ynov.quiz.utils.ThemeManager
 import java.util.*
 
 class SecondActivity: AppCompatActivity() {
@@ -19,7 +22,9 @@ class SecondActivity: AppCompatActivity() {
     private lateinit var resultYear: EditText
     private lateinit var resultNumberChamp: Slider
     private lateinit var validateBtn: Button
+    private val classeName : String = "SecendActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemeManager.themeSelect(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
@@ -42,9 +47,9 @@ class SecondActivity: AppCompatActivity() {
             quizzFirstname.text = "Bienvenue $firstname"
         }
 
-        var numberOfWinChamp = resultNumberChamp.value
+       var numberOfWinChamp = resultNumberChamp.value
 
-        resultNumberChamp.addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
+       resultNumberChamp.addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
             override fun onStartTrackingTouch(slider: Slider) {
                 numberOfWinChamp = slider.value;
             }
@@ -81,15 +86,21 @@ class SecondActivity: AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.action_favorite->{
-                // TODO: Light Mode
+            R.id.action_light->{
+                Log.d(classeName, "action light select")
+                ThemeManager.setTheme(this,this, Theme.LIGHT)
                 true
             }
-            R.id.action_settings->{
-                // TODO: Dark Mode
+            R.id.action_night->{
+                Log.d(classeName, "action night select")
+                ThemeManager.setTheme(this,this, Theme.DARK)
                 true
             }
-
+            R.id.action_automatic->{
+                Log.d(classeName, "action automatic select")
+                ThemeManager.setTheme(this,this, Theme.AUTOMATIC)
+                true
+            }
         }
         return super.onOptionsItemSelected(item)
     }

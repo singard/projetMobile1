@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.QuizDevMobile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="LightTheme" parent="Theme.AppCompat">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/bluePrimaryLight</item>
         <item name="colorPrimaryVariant">@color/bluePrimaryVariantLight</item>
@@ -9,12 +9,33 @@
         <item name="colorSecondary">@color/blueSecondaryLight</item>
         <item name="colorSecondaryVariant">@color/blueSecondaryVariantLight</item>
         <item name="colorOnSecondary">@color/PrimaryBlack</item>
+
+        <item name="colorOnBackground">@color/PrimaryBlack</item>
+        <item name="colorSurface">@color/bluePrimaryLight</item>
+
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.QuizDevMobile.NoActionBar">
+    <style name="DarkTheme" parent="Theme.AppCompat">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bluePrimaryLight</item>
+        <item name="colorPrimaryVariant">@color/bluePrimaryVariantLight</item>
+        <item name="colorOnPrimary">@color/PrimaryBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blueSecondaryLight</item>
+        <item name="colorSecondaryVariant">@color/blueSecondaryVariantLight</item>
+        <item name="colorOnSecondary">@color/PrimaryWhite</item>
+
+        <item name="colorOnBackground">@color/PrimaryWhite</item>
+        <item name="colorSurface">@color/bluePrimaryLight</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -22,4 +43,5 @@
     <style name="Theme.QuizDevMobile.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.QuizDevMobile.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

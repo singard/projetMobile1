@@ -28,4 +28,5 @@
     <string name="quiz_om">Quiz OM</string>
     <string name="navigation_menu_label">Slider to the right to bring up the navigation menu</string>
     <string name="welcome_app_label">Welcome to the Quiz application</string>
+    <string name="auto_mode">automat</string>
 </resources>
