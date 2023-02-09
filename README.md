@@ -31,21 +31,21 @@ Pour l'utiliser, rien de plus simple:
 
 ## Présentation
 ### Ecran d'accueil
-![home](https://github.com/singard/projetMobile1/blob/master/Capture%20d%E2%80%99e%CC%81cran%202023-02-09%20a%CC%80%2011.50.40.png)
+<img src="https://github.com/singard/projetMobile1/blob/master/Capture%20d%E2%80%99e%CC%81cran%202023-02-09%20a%CC%80%2011.50.40.png" width=30% height=30%>
 
 ### Ecran d'informations d'utilisateur
-![info](https://github.com/singard/projetMobile1/blob/master/Capture%20d%E2%80%99e%CC%81cran%202023-02-09%20a%CC%80%2011.51.20.png)
+<img src="https://github.com/singard/projetMobile1/blob/master/Capture%20d%E2%80%99e%CC%81cran%202023-02-09%20a%CC%80%2011.51.20.png" width=30% height=30%>
 
 ### Questionnaire
-![questionnaire](https://github.com/singard/projetMobile1/blob/master/Capture%20d%E2%80%99e%CC%81cran%202023-02-09%20a%CC%80%2011.58.01.png)
+<img src="https://github.com/singard/projetMobile1/blob/master/Capture%20d%E2%80%99e%CC%81cran%202023-02-09%20a%CC%80%2011.58.01.png" width=30% height=30%>
 
 ### Résultats 
-![answer](https://github.com/singard/projetMobile1/blob/master/Capture%20d%E2%80%99e%CC%81cran%202023-02-09%20a%CC%80%2011.58.16.png)
+<img src="https://github.com/singard/projetMobile1/blob/master/Capture%20d%E2%80%99e%CC%81cran%202023-02-09%20a%CC%80%2011.58.16.png" width=30% height=30%>
 
 ### Dark mode / light mode
-![theme](https://github.com/singard/projetMobile1/blob/master/device-2023-02-09-115136.gif)
+<img src="https://github.com/singard/projetMobile1/blob/master/device-2023-02-09-115136.gif" width=30% height=30%>
 
 ### Navigation
-![navigation](https://github.com/singard/projetMobile1/blob/master/device-2023-02-09-115904.gif)
+<img src="https://github.com/singard/projetMobile1/blob/master/device-2023-02-09-115904.gif" width=30% height=30%>
 
 La traduction est gérée comme vous pouvez le voir dans le gif de navigation.
